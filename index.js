@@ -145,7 +145,7 @@ router.post('/token/revoke', function (req, res) {
 });
 
 
-router.use(require('./tokenChecker'));
+router.use(require('./token-validator'));
 
 router.get('/secure', (req, res) => {
     // all secured routes goes here
