@@ -2,8 +2,10 @@
 
 Este ejemplo esta basado en los siguientes artículos:
 
-- [Refresh token con autenticación JWT. Implementación en Node.js](https://solidgeargroup.com/refresh-token-autenticacion-jwt-implementacion-nodejs?lang=es)
-- [Nodejs Authentication Using JWT and Refresh Token](https://codeforgeek.com/2018/03/refresh-token-jwt-nodejs-authentication/)
+- <a href="https://solidgeargroup.com/refresh-token-autenticacion-jwt-implementacion-nodejs?lang=es" target="_blank">Refresh token con autenticación JWT. Implementación en Node.js</a>
+- <a href="https://codeforgeek.com/2018/03/refresh-token-jwt-nodejs-authentication/" target="_blank">Nodejs Authentication Using JWT and Refresh Token</a>
+
+
 
 **Nota:** Te recomiendo que los leas, estan muy interesantes.
 
