@@ -1,4 +1,4 @@
-# node-jwt-refresh-token
+## Refresh tokens en Node.js con Express.js y Redis
 
 Este ejemplo esta basado en los siguientes artículos:
 
