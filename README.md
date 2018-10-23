@@ -61,15 +61,21 @@ npm run dev
 Una vez que hayas ejecutado el proyecto puedes usar el programa Postman para probar cada uno de los siguientes endpoints:
 
 #### /api/login
+
+Nota: Para probar use "admin" como nombre de usuario y "password" como contraseña
+
 ![Login](https://raw.githubusercontent.com/edgarjaviertec/node-jwt-refresh-token/master/screenshots/1-login.png)
+
 
 #### /api/refresh
 
 ![Refresh](https://raw.githubusercontent.com/edgarjaviertec/node-jwt-refresh-token/master/screenshots/2-refresh.png)
 
+
 #### /api/revoke
 
 ![Revoke](https://raw.githubusercontent.com/edgarjaviertec/node-jwt-refresh-token/master/screenshots/3-revoke.png)
+
 
 #### /api/secure
 ![Secure](https://raw.githubusercontent.com/edgarjaviertec/node-jwt-refresh-token/master/screenshots/4-secure.png)
