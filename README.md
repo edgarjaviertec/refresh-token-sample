@@ -9,8 +9,8 @@ Este ejemplo esta basado en los siguientes artículos:
 
 ### Requerimientos:
 
-Tener instalado Node.js
-Tener instalado un servidor de Redis
+- Tener instalado Node.js
+- Tener instalado un servidor de Redis
 
 ### Pasos para ejecutar el proyecto
 
