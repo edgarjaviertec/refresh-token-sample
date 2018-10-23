@@ -47,8 +47,8 @@ $ redis-server
 $ redis-cli
 ```
 
-Nota: Si usas macOS, puedes usar [Redis Server](https://langui.net/redis-server/)
-Nota: El proyecto intentara conectarse usando la configuración por defecto de Redis (127.0.0.1:6379)
+- Nota: Si usas macOS, puedes usar [Redis Server](https://langui.net/redis-server/)
+- Nota: El proyecto intentara conectarse usando la configuración por defecto de Redis (127.0.0.1:6379)
 
 4.- Ejecuta la aplicación
 
