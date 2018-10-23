@@ -44,7 +44,7 @@ module.exports = (req, res, next) => {
         });
     } else {
         if (accessToken) {
-            jwt.verify(accessToken, config.secret, function (err, decoded) {
+            jwt.verify(accessToken, config.accessTokenSecret, function (err, decoded) {
                 if (err) {
                     console.log("el error es: " + err);
                     return res.status(401).json({

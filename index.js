@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 const config = require('./config');
-const app = express();
+const index = express();
 
 
 //cofig de redis
@@ -51,7 +51,7 @@ router.post('/login', (req, res) => {
         "username": postData.username
     };
     // do the database authentication here, with user name and password combination.
-    const token = jwt.sign(user, config.secret, {expiresIn: config.tokenLife});
+    const token = jwt.sign(user, config.accessTokenSecret, {expiresIn: config.accessTokenLife});
     const refreshToken = jwt.sign(user, config.refreshTokenSecret, {expiresIn: config.refreshTokenLife});
     const response = {
         "access_token": token,
@@ -84,10 +84,10 @@ router.post('/token', (req, res) => {
                     "email": postData.email,
                     "username": postData.username
                 };
-                const accessToken = jwt.sign(user, config.secret, {expiresIn: config.tokenLife});
+                const accessToken = jwt.sign(user, config.accessTokenSecret, {expiresIn: config.accessTokenLife});
                 const response = {
                     "access_token": accessToken,
-                    "expires_in": config.tokenLife,
+                    "expires_in": config.accessTokenLife,
                     "token_type": "Bearer"
                 };
                 //client.hset(postData.refreshToken, "accessToken", token, redis.print);
@@ -152,6 +152,6 @@ router.get('/secure', (req, res) => {
     res.send('I am secured...')
 });
 
-app.use(bodyParser.json());
-app.use('/api', router);
-app.listen(config.port || process.env.port || 3000);
+index.use(bodyParser.json());
+index.use('/api', router);
+index.listen(config.port || process.env.port || 3000);
