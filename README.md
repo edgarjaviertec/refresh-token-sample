@@ -79,3 +79,10 @@ Nota: Para probar use "admin" como nombre de usuario y "password" como contrase�
 
 #### /api/secure
 ![Secure](https://raw.githubusercontent.com/edgarjaviertec/node-jwt-refresh-token/master/screenshots/4-secure.png)
+
+
+### Refresh tokens en Redis
+Puedes usar el cliente de Redis para ver cómo se almacenan y eliminan los refresh token o también puedes usar un cliente con interfaz gráfica como [Medis](http://getmedis.com/)
+
+![Redis](https://raw.githubusercontent.com/edgarjaviertec/node-jwt-refresh-token/master/screenshots/5-redis.png)
+
